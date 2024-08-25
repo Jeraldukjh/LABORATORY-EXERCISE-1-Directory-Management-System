@@ -20,7 +20,7 @@ cin >> choice;
 
 switch (choice) {
     case 1:
-        cout << showFilesList()
+        cout << showFileList();
         break;
     case 2: {
         cout << "Enter the name for the new directory: ";
@@ -31,9 +31,9 @@ switch (choice) {
     }
     case 3: {
         cout << "Enter the name of the directory to switch to: ";
-        string firName;
+        string dirName;
         cin >> dirName;
-        cout << changeWorkingDirectory(dirname);
+        cout << changeWorkingDirectory(dirName);
         break;
     }
     case 4: 
