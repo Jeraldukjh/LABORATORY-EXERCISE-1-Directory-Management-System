@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+string showFileList();
+string createNewDirectory(const string& dirName);
+string changeWorkingDirectory(const string& dirName);
+
+int main() {
+    while (true) {
+        cout << "\nMAIN MENU\n";
+        cout << "1. To display List of Files\n";
+        cout << "2. to create New Directory\n";
+        cout << "3. to change the Working Directory\n";
+        cout << "4. Exit\n";
+        cout << "Choose an option: ";
+
