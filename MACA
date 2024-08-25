@@ -15,4 +15,14 @@ int main() {
         cout << "3. to change the Working Directory\n";
         cout << "4. Exit\n";
         cout << "Choose an option: ";
+int choice;
+cin >> choice;
+
+switch (choice) {
+    case 1:
+        cout << showfiles()
+        break;
+    case 2: {
+        cout<<
+
 
