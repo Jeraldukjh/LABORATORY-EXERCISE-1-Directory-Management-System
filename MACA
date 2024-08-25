@@ -20,9 +20,46 @@ cin >> choice;
 
 switch (choice) {
     case 1:
-        cout << showfiles()
+        cout << showFilesList()
         break;
     case 2: {
-        cout<<
+        cout << "Enter the name for the new directory: ";
+        string dirName;
+        cin >> dirName;
+        cout << createNewDirectory(dirName);
+        break;
+}
+    case 3: {
+        cout << "Enter the name of the directory to switch to: ";
+        string firName;
+        cin >> dirName;
+        cout << changeWorkingDirectory(dirname);
+        break;
+}
+    case 4: 
+        cout << "Exitinng...\n";
+        return 0;
+    default:
+        cout << "Invalid choice. Please try again.\n";
+}
+    cout << "Press Enter to continue...";
+    cin.ignore();
+    cin.get();
+  }
+}
+
+string showFileList() {
+   return "Files in Current Directory:\n1. file1.txt\n2. file2.cpp\n3. report.doc\n4. image.png\n";
+}
+
+string createNewDirectory(const string& dirName) {
+    return "Directory '" + dirName + "' created successfully!\n";
+}
+
+string changeWorkingDirectory(const string& dirName) {
+    return "Current Directory: C:\\Users\\UserName\\" + dirName + "\n";
+}
+
+
 
 
